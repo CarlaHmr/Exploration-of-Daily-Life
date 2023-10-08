@@ -2,7 +2,7 @@
 
 # Data Visualization Project: Exploring Daily Life
 
-This data visualization project explores data collected from my smartwatch, providing an intriguing insight into my sleep patterns, stress levels, physical activities, and blood oxygen levels over time.
+This data visualization project explores data collected from my smartwatch, providing an intriguing insight into my sleep patterns, stress levels and physical activities.
 
 ## Overview
 
