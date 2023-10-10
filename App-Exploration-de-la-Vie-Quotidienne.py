@@ -318,6 +318,8 @@ elif selected_value == "II. Analysis of data":
     st.markdown("<h1 style='color: #00B0B9;text-align: center; text-decoration: bold'>II. Analysis of data</h1>", unsafe_allow_html=True)
     # Stress Data section
     st.markdown("<h1 style='color: #00B0B9;text-align: center; text-decoration: bold'>Stress Data</h1>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>Am I someone who stresses often?</h3>", unsafe_allow_html=True)
 
     stress_data = load_data('stress', '.csv')
     # Select the first three columns
@@ -397,8 +399,12 @@ elif selected_value == "II. Analysis of data":
 
     # Sub-subtitle for the temperature section
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>- Computed Temperature Data for 2023</h2>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>Does my skin temperature vary a lot at night?</h3>", unsafe_allow_html=True)
+
     temperature_data['sleep_start'] = pd.to_datetime(temperature_data['sleep_start'], format='ISO8601', errors='coerce')
     temperature_data['sleep_end'] = pd.to_datetime(temperature_data['sleep_end'], format='ISO8601', errors='coerce')
+
 
     # Summary statistics for nightly_temperature'
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>Summary Statistics for Numeric Columns</h2>", unsafe_allow_html=True)
@@ -448,6 +454,8 @@ elif selected_value == "II. Analysis of data":
 
     # Sub-subtitle for the Heart Rate Variability section
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>- Heart Rate Variability Data for 2023</h2>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>How does my heart rate vary at night?</h3>", unsafe_allow_html=True)
 
     # Summary statistics
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>Summary Statistics of HRV Data</h2>", unsafe_allow_html=True)
@@ -506,6 +514,8 @@ elif selected_value == "II. Analysis of data":
 
     # Sub-subtitle for the Heart Rate Variability Details section
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>- Heart Rate Variability Details Data for 2023</h2>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>How does my heart rate vary at night?</h3>", unsafe_allow_html=True)
 
     # Convert 'timestamp' column to datetime
     hrv_details_data['timestamp'] = pd.to_datetime(hrv_details_data['timestamp'])
@@ -547,6 +557,8 @@ elif selected_value == "II. Analysis of data":
 
     # Sub-subtitle for the Heart Rate Variability Histogram section
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>- Heart Rate Variability Histogram Data for 2023</h2>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>How does my heart rate vary at night?</h3>", unsafe_allow_html=True)
 
     # Convert 'timestamp' column to datetime
     hrv_histogram_data['timestamp'] = pd.to_datetime(hrv_histogram_data['timestamp'])
@@ -565,6 +577,8 @@ elif selected_value == "II. Analysis of data":
 
     # Sub-subtitle for the Daily Respiratory Rate section
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>- Daily Respiratory Rate Data for 2023</h2>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>How does my respiratory rate vary at night?</h3>", unsafe_allow_html=True)
 
     respiratory_rate_data['timestamp'] = pd.to_datetime(respiratory_rate_data['timestamp'])
 
@@ -602,6 +616,8 @@ elif selected_value == "II. Analysis of data":
     
     # Sub-subtitle for the Sleep Scores for the Year section
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>- Sleep Scores Data for 2023</h2>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>Do I often have a good sleep score?</h3>", unsafe_allow_html=True)
 
     # Distribution of Sleep Scores
     st.markdown("<h2 style='color: #00B0B9;text-align: center; text-decoration: bold'>Distribution of Sleep Scores</h2>", unsafe_allow_html=True)
@@ -660,6 +676,8 @@ elif selected_value == "II. Analysis of data":
     
     # Physical Activity section
     st.markdown("<h1 style='color: #00B0B9;text-align: center; text-decoration: bold'>Physical Activity Data</h1>", unsafe_allow_html=True)
+    # Question
+    st.markdown("<h3 style='color: #00B0B9;text-align: center; text-decoration: bold'>Is there a difference in my physical activity depending on the month?</h3>", unsafe_allow_html=True)
 
     # Sub-subtitle for the distribution of Active Minutes by zone
     st.markdown("<h2 style='color: #00B0B9; text-align: center;text-decoration: bold'>Distribution of Active Minutes by zone</h2>", unsafe_allow_html=True)
